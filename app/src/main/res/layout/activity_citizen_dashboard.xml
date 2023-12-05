@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navyblue"
+    tools:context=".CitizenDashboard">
+
+    <RelativeLayout
+        android:id="@+id/Heaeder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/lightpink">
+
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="289dp"
+            android:layout_height="68dp"
+            android:paddingRight="50dp"
+            android:src="@drawable/app_logo_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/homeUname"
+            android:layout_width="278dp"
+            android:layout_height="26dp"
+            android:layout_below="@id/imgLogo"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@+id/textView18"
+            android:fontFamily="serif-monospace"
+            android:text="username"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_below="@+id/imgLogo"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="serif-monospace"
+            android:text="Welcome,"
+            android:textColor="@color/black"
+            android:textSize="38sp" />
+
+        <Button
+            android:id="@+id/btnSignout"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/chilanka"
+            android:text="Log out"
+            android:textColor="@color/black"
+            app:icon='@drawable/baseline_logout_24' />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/Heaeder">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/btnFireBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="@color/redorange"
+                android:text="Fire\nAssistance"
+                android:paddingStart="50dp"
+                android:paddingEnd="50dp"
+                app:cornerRadius="10dp"
+                android:textSize="25dp"
+                android:enabled="false"/>
+
+            <Button
+                android:id="@+id/btnEarthQuackBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="@color/lightorange"
+                android:text="Earthquake\nAssistance"
+                android:layout_below="@id/btnFireBtn"
+                android:layout_marginTop="20dp"
+                android:paddingStart="50dp"
+                android:paddingEnd="50dp"
+                app:cornerRadius="10dp"
+                android:textSize="25dp" />
+
+            <Button
+                android:id="@+id/btnWaterBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="@color/lightblue"
+                android:textColor="@color/black"
+                android:text="Flood &amp; Tsunami\nAssistance"
+                android:layout_below="@id/btnEarthQuackBtn"
+                android:layout_marginTop="20dp"
+                android:paddingStart="50dp"
+                android:paddingEnd="50dp"
+                app:cornerRadius="10dp"
+                android:textSize="25dp" />
+
+        </RelativeLayout>
+
+        
+
+    </ScrollView>
+
+</RelativeLayout>

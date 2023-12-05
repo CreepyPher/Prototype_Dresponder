@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navyblue"
+    tools:context=".LoadingActivity"
+    >
+    <ImageView
+        android:id="@+id/imgapplogo"
+        android:layout_width="175dp"
+        android:layout_height="165dp"
+        android:layout_marginTop="144dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/app_logo" />
+
+    <TextView
+        android:id="@+id/txttitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="serif-monospace"
+        android:text="A Disaster Responder App"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:layout_below="@id/txtTitle"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="serif-monospace"
+        android:text="D'Respondr"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/imgapplogo"
+        android:layout_centerHorizontal="true" />
+
+    <ProgressBar
+        android:id="@+id/idPBLoading"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/txttitle2"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:indeterminateTint="@color/white" />
+
+</RelativeLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navyblue"
+    tools:context=".ResponderSignUp">
+
+    <ImageButton
+        android:id="@+id/BTN1imgback"
+        android:layout_width="38dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/navyblue"
+        app:srcCompat="@drawable/baseline_arrow_back_ios_24"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/toptxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/architects_daughter"
+        android:text="Responer Sign up"
+        android:textSize="35dp" />
+
+    <!--Fullname textbox-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtfullname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Fullname"
+        android:textColorHint="@color/white"
+
+        android:layout_below="@+id/toptxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:id="@+id/editxtRfullname"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <!--Email textbox-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtREmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textColorHint="@color/white"
+        android:layout_below="@+id/txtfullname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:id="@+id/editxtRemail"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--Pass word-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:endIconMode="password_toggle"
+        android:hint="Password"
+        android:textColorHint="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtREmail"
+        android:layout_marginTop="10dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textColor="@color/white"
+            android:id="@+id/editxtRPass"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--conform Pass word-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtconPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:endIconMode="password_toggle"
+        android:textColorHint="@color/white"
+        android:hint="re-type Password"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtPassword"
+        android:layout_marginTop="10dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:inputType="textPassword"
+            android:id="@+id/editxtRconPass"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnRNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp"
+        android:fontFamily="@font/chilanka"
+        android:text="Next"
+        android:padding="15dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:textSize="25dp"
+        android:textColor="@color/white"/>
+
+
+</RelativeLayout>

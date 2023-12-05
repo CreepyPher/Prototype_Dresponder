@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "550389671798",
+    "firebase_url": "https://drespondr-3d931-default-rtdb.firebaseio.com",
+    "project_id": "drespondr-3d931",
+    "storage_bucket": "drespondr-3d931.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:550389671798:android:27c0586e58a9122b9ebc57",
+        "android_client_info": {
+          "package_name": "com.example.proto_drespondr"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABEdgVYNqMJWeHKMb1q62PfbkSBXs5rzc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:550389671798:android:de0bca33e11ae7059ebc57",
+        "android_client_info": {
+          "package_name": "com.example.prototype_dresponder"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABEdgVYNqMJWeHKMb1q62PfbkSBXs5rzc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
